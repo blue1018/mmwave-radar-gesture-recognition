@@ -6,7 +6,7 @@ Research on the Application of Millimeter-Wave Radar Gesture Recognition in Publ
 
 The project investigates whether Transformer-based architectures can improve millimeter-wave radar gesture recognition under a shared data-processing and evaluation pipeline.
 
-The project uses the DI-Gesture millimeter-wave radar dataset.
+The project uses the DI-Gesture millimeter-wave radar dataset (https://github.com/leeyadong/cross_domain_gesture_dataset).
 
 The dataset is not included in this repository.
 
