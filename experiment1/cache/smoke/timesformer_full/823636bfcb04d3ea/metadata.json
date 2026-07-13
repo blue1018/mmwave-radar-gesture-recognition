@@ -1,0 +1,19 @@
+{
+  "cache_key": "823636bfcb04d3eafbead5059969d9be1a77319da830998f8f4a8b7e27883dd9",
+  "cache_schema": 1,
+  "display_name": "TimeSformer-Full",
+  "model_name": "timesformer_full",
+  "run_mode": "smoke",
+  "saved_at_unix": 1780916398.845461,
+  "training_profile": {
+    "augmentation": true,
+    "clip_grad_norm": 1.0,
+    "epochs": 1,
+    "label_smoothing": 0.05,
+    "learning_rate": 0.00015,
+    "motion_input": true,
+    "use_cosine": true,
+    "warmup_epochs": 1,
+    "weight_decay": 0.05
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "best_val_acc": 0.5643,
+  "best_val_bal_acc": 0.2661,
+  "best_val_macro_f1": 0.1667,
+  "display_name": "LPVT-Full",
+  "model": "lpvt_full",
+  "params_m": 5.483,
+  "test_acc": 0.4429,
+  "test_bal_acc": 0.2545,
+  "test_loss": 1.6146,
+  "test_macro_f1": 0.1469,
+  "test_weighted_f1": 0.3497,
+  "train_seconds": 12.1
+}

@@ -1,0 +1,19 @@
+{
+  "cache_key": "18d237c0e0305bbbf09875810f4da82fd46f59a648eace74e9d20a1b9de1bd5c",
+  "cache_schema": 1,
+  "display_name": "CNN + Transformer",
+  "model_name": "cnn_transformer",
+  "run_mode": "smoke",
+  "saved_at_unix": 1780916344.1981592,
+  "training_profile": {
+    "augmentation": true,
+    "clip_grad_norm": 1.0,
+    "epochs": 1,
+    "label_smoothing": 0.03,
+    "learning_rate": 0.0004,
+    "motion_input": true,
+    "use_cosine": true,
+    "warmup_epochs": 1,
+    "weight_decay": 0.03
+  }
+}

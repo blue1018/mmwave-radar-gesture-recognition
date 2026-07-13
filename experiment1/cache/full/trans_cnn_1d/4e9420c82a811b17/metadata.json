@@ -1,0 +1,24 @@
+{
+  "cache_key": "4e9420c82a811b1790220f173532698fdc4363b21774b96246ba9f211401cc46",
+  "cache_schema": 1,
+  "display_name": "TRANS-CNN-1D",
+  "model_name": "trans_cnn_1d",
+  "run_mode": "full",
+  "saved_at_unix": 1781527087.6655629,
+  "training_profile": {
+    "augmentation": false,
+    "clip_grad_norm": 0.25,
+    "cpu_grad_clip": true,
+    "epochs": 40,
+    "label_smoothing": 0.03,
+    "learning_rate": 0.0001,
+    "motion_input": true,
+    "normalization": "group_norm_temporal_conv",
+    "skip_nonfinite_grad_steps": true,
+    "stability_profile": "trans_cnn_1d_gn_convmlp_noaug_lr1e-4_wd1e-4_clip0.25",
+    "temporal_tail": "conv_mlp_no_lstm",
+    "use_cosine": true,
+    "warmup_epochs": 5,
+    "weight_decay": 0.0001
+  }
+}

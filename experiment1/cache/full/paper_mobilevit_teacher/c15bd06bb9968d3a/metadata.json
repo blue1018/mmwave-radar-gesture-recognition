@@ -1,0 +1,20 @@
+{
+  "cache_key": "c15bd06bb9968d3a00e3e1f20028b92fd133d2a511f0798e1f1d1f12acdf3c01",
+  "cache_schema": 1,
+  "display_name": "MobileViT (Paper Teacher)",
+  "model_name": "paper_mobilevit_teacher",
+  "run_mode": "full",
+  "saved_at_unix": 1780983886.246748,
+  "training_profile": {
+    "augmentation": true,
+    "clip_grad_norm": 1.0,
+    "epochs": 40,
+    "label_smoothing": 0.03,
+    "learning_rate": 0.0003,
+    "motion_input": true,
+    "paper_adaptation": "DRAI plus temporal-difference branch",
+    "use_cosine": true,
+    "warmup_epochs": 5,
+    "weight_decay": 0.03
+  }
+}

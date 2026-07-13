@@ -1,0 +1,17 @@
+{
+  "best_val_acc": 0.949,
+  "best_val_bal_acc": 0.9347,
+  "best_val_macro_f1": 0.9258,
+  "display_name": "MobileViT (Paper Student + KD)",
+  "distilled_from": "paper_mobilevit_teacher",
+  "kd_alpha": 0.5,
+  "kd_temperature": 4.0,
+  "model": "paper_mobilevit_student",
+  "params_m": 0.024,
+  "test_acc": 0.8833,
+  "test_bal_acc": 0.8418,
+  "test_loss": 0.3998,
+  "test_macro_f1": 0.8485,
+  "test_weighted_f1": 0.8812,
+  "train_seconds": 3402.9
+}

@@ -1,0 +1,14 @@
+{
+  "best_val_acc": 0.6863,
+  "best_val_bal_acc": 0.473,
+  "best_val_macro_f1": 0.4151,
+  "display_name": "MobileViT (External Frozen)",
+  "model": "external_mobilevit_frozen",
+  "params_m": 5.117,
+  "test_acc": 0.6118,
+  "test_bal_acc": 0.4509,
+  "test_loss": 1.2687,
+  "test_macro_f1": 0.3917,
+  "test_weighted_f1": 0.5455,
+  "train_seconds": 58291.9
+}

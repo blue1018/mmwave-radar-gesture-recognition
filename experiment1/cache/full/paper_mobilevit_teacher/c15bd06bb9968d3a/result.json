@@ -1,0 +1,14 @@
+{
+  "best_val_acc": 0.9796,
+  "best_val_bal_acc": 0.977,
+  "best_val_macro_f1": 0.972,
+  "display_name": "MobileViT (Paper Teacher)",
+  "model": "paper_mobilevit_teacher",
+  "params_m": 0.096,
+  "test_acc": 0.9138,
+  "test_bal_acc": 0.8863,
+  "test_loss": 0.4341,
+  "test_macro_f1": 0.8886,
+  "test_weighted_f1": 0.9128,
+  "train_seconds": 4338.1
+}

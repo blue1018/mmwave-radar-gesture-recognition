@@ -1,0 +1,14 @@
+{
+  "best_val_acc": 0.9943,
+  "best_val_bal_acc": 0.9907,
+  "best_val_macro_f1": 0.9904,
+  "display_name": "CNN + Transformer",
+  "model": "cnn_transformer",
+  "params_m": 0.5,
+  "test_acc": 0.9433,
+  "test_bal_acc": 0.9147,
+  "test_loss": 0.3705,
+  "test_macro_f1": 0.9257,
+  "test_weighted_f1": 0.9424,
+  "train_seconds": 1200.9
+}

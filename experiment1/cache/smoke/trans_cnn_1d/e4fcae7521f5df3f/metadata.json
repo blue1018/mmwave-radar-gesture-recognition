@@ -1,0 +1,19 @@
+{
+  "cache_key": "e4fcae7521f5df3f41cc8ec1d2c6a37f382c257526b8d8f47c3fe4642541288b",
+  "cache_schema": 1,
+  "display_name": "TRANS-CNN-1D",
+  "model_name": "trans_cnn_1d",
+  "run_mode": "smoke",
+  "saved_at_unix": 1780916347.242765,
+  "training_profile": {
+    "augmentation": true,
+    "clip_grad_norm": 1.0,
+    "epochs": 1,
+    "label_smoothing": 0.03,
+    "learning_rate": 0.0004,
+    "motion_input": true,
+    "use_cosine": true,
+    "warmup_epochs": 1,
+    "weight_decay": 0.03
+  }
+}

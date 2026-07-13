@@ -1,0 +1,19 @@
+{
+  "cache_key": "cf2ff602f54617aa5f07d2a3cab5c4ea1eaccc343f65a96f1ada35f3a244576f",
+  "cache_schema": 1,
+  "display_name": "CRNN Baseline",
+  "model_name": "crnn",
+  "run_mode": "full",
+  "saved_at_unix": 1780937581.974163,
+  "training_profile": {
+    "augmentation": false,
+    "clip_grad_norm": null,
+    "epochs": 20,
+    "label_smoothing": 0.0,
+    "learning_rate": 0.0001,
+    "motion_input": false,
+    "use_cosine": false,
+    "warmup_epochs": 0,
+    "weight_decay": 0.0001
+  }
+}

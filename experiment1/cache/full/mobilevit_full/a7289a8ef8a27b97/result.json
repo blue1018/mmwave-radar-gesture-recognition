@@ -1,0 +1,14 @@
+{
+  "best_val_acc": 0.998,
+  "best_val_bal_acc": 0.9966,
+  "best_val_macro_f1": 0.9973,
+  "display_name": "MobileViT (Project Full)",
+  "model": "mobilevit_full",
+  "params_m": 3.655,
+  "test_acc": 0.9479,
+  "test_bal_acc": 0.9266,
+  "test_loss": 0.4836,
+  "test_macro_f1": 0.9367,
+  "test_weighted_f1": 0.947,
+  "train_seconds": 18684.2
+}

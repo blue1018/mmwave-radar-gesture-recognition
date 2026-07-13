@@ -1,0 +1,14 @@
+{
+  "best_val_acc": 0.4,
+  "best_val_bal_acc": 0.1,
+  "best_val_macro_f1": 0.086,
+  "display_name": "TRANS-CNN-1D",
+  "model": "trans_cnn_1d",
+  "params_m": 0.403,
+  "test_acc": 0.3714,
+  "test_bal_acc": 0.1442,
+  "test_loss": 1.8573,
+  "test_macro_f1": 0.1133,
+  "test_weighted_f1": 0.2757,
+  "train_seconds": 2.3
+}

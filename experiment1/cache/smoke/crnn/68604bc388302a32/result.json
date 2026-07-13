@@ -1,0 +1,14 @@
+{
+  "best_val_acc": 0.0857,
+  "best_val_bal_acc": 0.1214,
+  "best_val_macro_f1": 0.0291,
+  "display_name": "CRNN Baseline",
+  "model": "crnn",
+  "params_m": 0.346,
+  "test_acc": 0.0857,
+  "test_bal_acc": 0.1235,
+  "test_loss": 1.918,
+  "test_macro_f1": 0.0278,
+  "test_weighted_f1": 0.0376,
+  "train_seconds": 0.9
+}

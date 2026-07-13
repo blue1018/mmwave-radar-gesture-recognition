@@ -1,0 +1,21 @@
+{
+  "cache_key": "62c02795baa9fe71b32a094ece448c62ed49f2f0ac85fef64ee858d29d8f23ef",
+  "cache_schema": 1,
+  "display_name": "External ResNet50 ImageNet",
+  "model_name": "external_resnet50_pretrained",
+  "run_mode": "smoke",
+  "saved_at_unix": 1780934808.4430132,
+  "training_profile": {
+    "augmentation": false,
+    "clip_grad_norm": 1.0,
+    "epochs": 1,
+    "external_pretrained_weights": "torchvision ResNet50_Weights.DEFAULT / ImageNet-1K",
+    "freeze_pretrained_backbone": true,
+    "label_smoothing": 0.03,
+    "learning_rate": 0.0001,
+    "motion_input": false,
+    "use_cosine": false,
+    "warmup_epochs": 0,
+    "weight_decay": 0.0001
+  }
+}

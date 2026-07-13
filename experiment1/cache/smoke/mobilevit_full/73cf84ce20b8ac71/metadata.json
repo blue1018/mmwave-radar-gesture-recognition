@@ -1,0 +1,19 @@
+{
+  "cache_key": "73cf84ce20b8ac711590cc5ce1a3796619b65f3a94b9f05c822f4c4d4e9b779b",
+  "cache_schema": 1,
+  "display_name": "MobileViT-Full",
+  "model_name": "mobilevit_full",
+  "run_mode": "smoke",
+  "saved_at_unix": 1780916379.773112,
+  "training_profile": {
+    "augmentation": true,
+    "clip_grad_norm": 1.0,
+    "epochs": 1,
+    "label_smoothing": 0.05,
+    "learning_rate": 0.0002,
+    "motion_input": true,
+    "use_cosine": true,
+    "warmup_epochs": 1,
+    "weight_decay": 0.05
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "cache_key": "36eec09bab52ee6122c2413ccf5dd5913c5d6186540f83c6fef2ffbac45bf481",
+  "cache_schema": 1,
+  "display_name": "MobileViT (Paper Student + KD)",
+  "distillation": {
+    "kd_alpha": 0.5,
+    "kd_temperature": 4.0,
+    "teacher_display_name": "MobileViT (Paper Teacher)",
+    "teacher_model": "paper_mobilevit_teacher"
+  },
+  "distillation_teacher": {
+    "teacher_cache_key": "c15bd06bb9968d3a00e3e1f20028b92fd133d2a511f0798e1f1d1f12acdf3c01",
+    "teacher_checkpoint": "/Users/blue/Desktop/Practicum/code/experiment1/cache/full/paper_mobilevit_teacher/c15bd06bb9968d3a/best_state.pt",
+    "teacher_display_name": "MobileViT (Paper Teacher)",
+    "teacher_model": "paper_mobilevit_teacher",
+    "teacher_training_profile": {
+      "augmentation": true,
+      "clip_grad_norm": 1.0,
+      "epochs": 40,
+      "label_smoothing": 0.03,
+      "learning_rate": 0.0003,
+      "motion_input": true,
+      "paper_adaptation": "DRAI plus temporal-difference branch",
+      "use_cosine": true,
+      "warmup_epochs": 5,
+      "weight_decay": 0.03
+    }
+  },
+  "model_name": "paper_mobilevit_student",
+  "run_mode": "full",
+  "saved_at_unix": 1780987301.287582,
+  "training_profile": {
+    "augmentation": true,
+    "clip_grad_norm": 1.0,
+    "distillation": true,
+    "epochs": 40,
+    "kd_alpha": 0.5,
+    "kd_temperature": 4.0,
+    "label_smoothing": 0.0,
+    "learning_rate": 0.0003,
+    "motion_input": true,
+    "paper_adaptation": "DRAI plus temporal-difference branch",
+    "teacher_model": "paper_mobilevit_teacher",
+    "teacher_training_profile": {
+      "augmentation": true,
+      "clip_grad_norm": 1.0,
+      "epochs": 40,
+      "label_smoothing": 0.03,
+      "learning_rate": 0.0003,
+      "motion_input": true,
+      "paper_adaptation": "DRAI plus temporal-difference branch",
+      "use_cosine": true,
+      "warmup_epochs": 5,
+      "weight_decay": 0.03
+    },
+    "use_cosine": true,
+    "warmup_epochs": 5,
+    "weight_decay": 0.02
+  }
+}
