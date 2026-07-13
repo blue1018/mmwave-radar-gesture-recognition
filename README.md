@@ -166,4 +166,4 @@ The dataset is not covered by the repository's MIT License. Dataset access, use,
 
 Zhanjun He
 
-MSc in Artificial IntelligenceNational College of Ireland
+MSc in Artificial Intelligence National College of Ireland
