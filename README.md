@@ -30,7 +30,7 @@ This project is for mmWave radar gesture recognition. It first converts raw `.np
 |---|---|
 | `processing/` | Raw radar data inspection and DRAI generation. |
 | `experiment1/` | Data loading, model definitions, training, evaluation, caching, and reporting. |
-| `README.md` | Full English README. |
+| `README.md` | Full  README. |
 
 ## Run Order
 
