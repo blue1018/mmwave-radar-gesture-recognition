@@ -1,4 +1,4 @@
-# DI-Gesture  README
+# Research on the Application of Millimeter-Wave Radar Gesture Recognition in Public Scenarios: Improving with Transformer
 
 This repository contains the code and experimental results for the research project:
 
