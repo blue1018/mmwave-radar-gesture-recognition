@@ -1,0 +1,38 @@
+{
+  "augmentation": false,
+  "batch_size": 16,
+  "best_epoch": 2,
+  "best_val_balanced_acc": 0.2571428571428571,
+  "best_val_macro_f1": 0.2103135039326465,
+  "clip_grad_norm": 0.25,
+  "epochs": 2,
+  "failure_reason": "",
+  "final_train_val_gap": -0.02989854956540286,
+  "history": [
+    {
+      "epoch": 1,
+      "train_balanced_acc": 0.1393850317282568,
+      "val_balanced_acc": 0.14285714285714285,
+      "val_macro_f1": 0.10443864229765012
+    },
+    {
+      "epoch": 2,
+      "train_balanced_acc": 0.22724430757745426,
+      "val_balanced_acc": 0.2571428571428571,
+      "val_macro_f1": 0.2103135039326465
+    }
+  ],
+  "label_smoothing": 0.03,
+  "learning_rate": 0.0002,
+  "model": "trans_cnn_1d",
+  "purpose": "higher_learning_rate",
+  "runtime_seconds": 5.32,
+  "signature": "6246801e3e67c529",
+  "stage": 1,
+  "status": "completed",
+  "train_samples": 665,
+  "trial_id": "T02",
+  "val_samples": 490,
+  "warmup_epochs": 1,
+  "weight_decay": 0.0001
+}

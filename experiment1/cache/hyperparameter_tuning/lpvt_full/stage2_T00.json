@@ -1,0 +1,50 @@
+{
+  "augmentation": false,
+  "batch_size": 6,
+  "best_epoch": 4,
+  "best_val_balanced_acc": 0.5464795918367347,
+  "best_val_macro_f1": 0.5433500350007419,
+  "clip_grad_norm": 1.0,
+  "epochs": 4,
+  "failure_reason": "",
+  "final_train_val_gap": -0.009078569335637998,
+  "history": [
+    {
+      "epoch": 1,
+      "train_balanced_acc": 0.2526463405633161,
+      "val_balanced_acc": 0.3508673469387755,
+      "val_macro_f1": 0.2953802583810999
+    },
+    {
+      "epoch": 2,
+      "train_balanced_acc": 0.3814404152802967,
+      "val_balanced_acc": 0.34311224489795916,
+      "val_macro_f1": 0.2939434603713171
+    },
+    {
+      "epoch": 3,
+      "train_balanced_acc": 0.4224790035761125,
+      "val_balanced_acc": 0.5096938775510205,
+      "val_macro_f1": 0.5057632703208493
+    },
+    {
+      "epoch": 4,
+      "train_balanced_acc": 0.5374010225010967,
+      "val_balanced_acc": 0.5464795918367347,
+      "val_macro_f1": 0.5433500350007419
+    }
+  ],
+  "label_smoothing": 0.05,
+  "learning_rate": 0.0002,
+  "model": "lpvt_full",
+  "purpose": "baseline",
+  "runtime_seconds": 404.69,
+  "signature": "692f8666dab0c23c",
+  "stage": 2,
+  "status": "completed",
+  "train_samples": 1995,
+  "trial_id": "T00",
+  "val_samples": 4900,
+  "warmup_epochs": 1,
+  "weight_decay": 0.05
+}

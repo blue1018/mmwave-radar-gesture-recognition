@@ -1,0 +1,50 @@
+{
+  "augmentation": false,
+  "batch_size": 16,
+  "best_epoch": 4,
+  "best_val_balanced_acc": 0.5301020408163265,
+  "best_val_macro_f1": 0.5327348757230632,
+  "clip_grad_norm": 0.25,
+  "epochs": 4,
+  "failure_reason": "",
+  "final_train_val_gap": -0.03823952971734401,
+  "history": [
+    {
+      "epoch": 1,
+      "train_balanced_acc": 0.1608024419366154,
+      "val_balanced_acc": 0.25632653061224486,
+      "val_macro_f1": 0.2016429520215637
+    },
+    {
+      "epoch": 2,
+      "train_balanced_acc": 0.35141410356384417,
+      "val_balanced_acc": 0.375,
+      "val_macro_f1": 0.37960996655982676
+    },
+    {
+      "epoch": 3,
+      "train_balanced_acc": 0.43792704700784757,
+      "val_balanced_acc": 0.5013775510204082,
+      "val_macro_f1": 0.5194528508675896
+    },
+    {
+      "epoch": 4,
+      "train_balanced_acc": 0.4918625110989825,
+      "val_balanced_acc": 0.5301020408163265,
+      "val_macro_f1": 0.5327348757230632
+    }
+  ],
+  "label_smoothing": 0.03,
+  "learning_rate": 0.0001,
+  "model": "trans_cnn_1d",
+  "purpose": "batch_size",
+  "runtime_seconds": 47.61,
+  "signature": "c336fef943316b9c",
+  "stage": 2,
+  "status": "completed",
+  "train_samples": 1995,
+  "trial_id": "T04",
+  "val_samples": 4900,
+  "warmup_epochs": 1,
+  "weight_decay": 0.0001
+}

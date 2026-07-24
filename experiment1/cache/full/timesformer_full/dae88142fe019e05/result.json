@@ -1,0 +1,14 @@
+{
+  "best_val_acc": 0.76,
+  "best_val_bal_acc": 0.5636,
+  "best_val_macro_f1": 0.5928,
+  "display_name": "TimeSformer-Full",
+  "model": "timesformer_full",
+  "params_m": 4.459,
+  "test_acc": 0.6148,
+  "test_bal_acc": 0.4389,
+  "test_loss": 1.2423,
+  "test_macro_f1": 0.447,
+  "test_weighted_f1": 0.5845,
+  "train_seconds": 20122.9
+}

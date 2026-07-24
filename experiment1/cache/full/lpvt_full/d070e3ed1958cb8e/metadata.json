@@ -1,0 +1,19 @@
+{
+  "cache_key": "d070e3ed1958cb8e759bd60eebc101079c58f2a0224e6abdb67969fc9037c7d1",
+  "cache_schema": 1,
+  "display_name": "LPVT-Full",
+  "model_name": "lpvt_full",
+  "run_mode": "full",
+  "saved_at_unix": 1784774902.1451478,
+  "training_profile": {
+    "augmentation": false,
+    "clip_grad_norm": 1.0,
+    "epochs": 30,
+    "label_smoothing": 0.05,
+    "learning_rate": 0.0002,
+    "motion_input": true,
+    "use_cosine": true,
+    "warmup_epochs": 6,
+    "weight_decay": 0.05
+  }
+}

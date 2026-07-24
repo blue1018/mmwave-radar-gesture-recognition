@@ -1,0 +1,38 @@
+{
+  "augmentation": true,
+  "batch_size": 16,
+  "best_epoch": 1,
+  "best_val_balanced_acc": 0.14285714285714285,
+  "best_val_macro_f1": 0.1038961038961039,
+  "clip_grad_norm": 1.0,
+  "epochs": 2,
+  "failure_reason": "",
+  "final_train_val_gap": -0.0015037593984962294,
+  "history": [
+    {
+      "epoch": 1,
+      "train_balanced_acc": 0.14464485682290834,
+      "val_balanced_acc": 0.14285714285714285,
+      "val_macro_f1": 0.1038961038961039
+    },
+    {
+      "epoch": 2,
+      "train_balanced_acc": 0.14135338345864662,
+      "val_balanced_acc": 0.14285714285714285,
+      "val_macro_f1": 0.1038961038961039
+    }
+  ],
+  "label_smoothing": 0.05,
+  "learning_rate": 0.0003,
+  "model": "paper_mobilevit_teacher",
+  "purpose": "label_smoothing",
+  "runtime_seconds": 26.11,
+  "signature": "56c4f74b5f0f5825",
+  "stage": 1,
+  "status": "completed",
+  "train_samples": 665,
+  "trial_id": "T05",
+  "val_samples": 490,
+  "warmup_epochs": 1,
+  "weight_decay": 0.03
+}

@@ -1,4 +1,4 @@
-# Research on the Application of Millimeter-Wave Radar Gesture Recognition in Public Scenarios: Improving with Transformer
+# README
 
 This repository contains the code and experimental results for the research project:
 
@@ -6,7 +6,7 @@ Research on the Application of Millimeter-Wave Radar Gesture Recognition in Publ
 
 The project investigates whether Transformer-based architectures can improve millimeter-wave radar gesture recognition under a shared data-processing and evaluation pipeline.
 
-The project uses the DI-Gesture millimeter-wave radar dataset (https://github.com/leeyadong/cross_domain_gesture_dataset).
+The project uses the DI-Gesture millimeter-wave radar dataset.
 
 The dataset is not included in this repository.
 
@@ -22,15 +22,13 @@ This research compares convolutional, recurrent, lightweight attention-based, an
 
 This project is for mmWave radar gesture recognition. It first converts raw `.npy` radar data into DRAI representations, then trains and compares multiple deep learning models in `experiment1/`.
 
-
-
 ## Directory
 
 | Path | Purpose |
 |---|---|
 | `processing/` | Raw radar data inspection and DRAI generation. |
 | `experiment1/` | Data loading, model definitions, training, evaluation, caching, and reporting. |
-| `README.md` | Full  README. |
+| `README.md` | Full English README. |
 
 ## Run Order
 
@@ -71,6 +69,8 @@ experiment1/di_gesture_experiment.ipynb
 | `SEQ_LEN` | `32` |
 | `IMAGE_SIZE` | `32` |
 | `NUM_CLASSES` | `7` |
+| `USE_TRANSFORMER_MOTION_INPUT` | `True` |
+| `USE_TRANSFORMER_AUGMENTATION` | `True` |
 | `USE_RUN_CACHE` | `True` |
 | `SAVE_RUN_CACHE` | `True` |
 | `SKIP_TRAIN_IF_RESULTS_EXIST` | `True` |
@@ -100,13 +100,13 @@ Note: keep `paper_mobilevit_teacher` before `paper_mobilevit_student`, because t
 
 ## Data Split
 
-| Split | Environment |
-|---|---|
-| Train | `e2`, `e3`, `e4` |
-| Validation | `e1` |
-| Test | `e6` |
+| Split | Environment | Samples | Background `n` | Gesture samples |
+|---|---|---:|---:|---:|
+| Train | `e2`, `e3`, `e4` | 13,300 | 7,600 | 5,700 |
+| Validation | `e1` | 4,900 | 2,800 | 2,100 |
+| Test | `e6` | 3,050 | 1,400 | 1,650 |
 
-The split separates data by environment ID to test generalization across different recording environments.
+The split separates data by environment ID to test generalization across recording environments. The six gesture classes are balanced within each split, but the background class is larger, so balanced accuracy is the primary comparison metric.
 
 ## Gesture Classes
 
@@ -118,15 +118,35 @@ Here, `n` is the background/non-gesture class.
 
 ## Full-Run Result Snapshot
 
-The current full cache contains 9 model results. Ranked by test balanced accuracy, `test_bal_acc`:
+This snapshot matches the active configuration and the latest executed notebook outputs as of 24 July 2026. The current run selects one configuration-matching result for each of the nine enabled models and ranks them by test balanced accuracy, `test_bal_acc`:
 
 | Rank | Model | test_bal_acc | test_acc | macro_f1 |
 |---:|---|---:|---:|---:|
-| 1 | LPVT-Full | 0.9466 | 0.9600 | 0.9550 |
-| 2 | MobileViT (Project Full) | 0.9266 | 0.9479 | 0.9367 |
-| 3 | CNN + Transformer | 0.9147 | 0.9433 | 0.9257 |
+| 1 | MobileViT (Project Full) | 0.9266 | 0.9479 | 0.9367 |
+| 2 | CNN + Transformer | 0.9147 | 0.9433 | 0.9257 |
+| 3 | LPVT-Full | 0.9076 | 0.9351 | 0.9201 |
+| 4 | CRNN Baseline | 0.9062 | 0.9292 | 0.9082 |
+| 5 | TRANS-CNN-1D | 0.8918 | 0.9246 | 0.9032 |
+| 6 | MobileViT (Paper Teacher) | 0.8863 | 0.9138 | 0.8886 |
+| 7 | MobileViT (Paper Student + KD) | 0.8418 | 0.8833 | 0.8485 |
+| 8 | MobileViT (External Frozen) | 0.4509 | 0.6118 | 0.3917 |
+| 9 | TimeSformer-Full | 0.4389 | 0.6148 | 0.4470 |
 
-This project prioritizes `test_bal_acc` because the background class `n` is much larger than the gesture classes, so plain accuracy can be biased by class imbalance.
+MobileViT (Project Full) improves over the CRNN baseline by 0.0204 balanced-accuracy points and 0.0285 macro-F1 points on `e6`.
+
+Historical cache directories can coexist with the active results. In particular, the older LPVT-Full result with `test_bal_acc=0.9466` used augmentation, whereas the current LPVT-Full profile disables augmentation and yields 0.9076. Results from different cache keys or training profiles should not be mixed in one ranking.
+
+## Secondary `e5` Stability Check
+
+The notebook also evaluates the current checkpoints on the unseen `e5` environment without changing the primary split. `e5` contains 2,800 samples: 200 from each gesture class and 1,600 background samples.
+
+| Rank | Model | e5_bal_acc | 95% bootstrap interval |
+|---:|---|---:|---:|
+| 1 | MobileViT (Project Full) | 0.9921 | [0.9876, 0.9963] |
+| 2 | CNN + Transformer | 0.9895 | [0.9846, 0.9937] |
+| 3 | LPVT-Full | 0.9870 | [0.9812, 0.9923] |
+
+The intervals use 5,000 stratified bootstrap resamples. MobileViT's paired balanced-accuracy delta intervals versus CNN + Transformer and LPVT-Full include zero, so this bootstrap check does not establish separation among the top three on balanced accuracy. Exact McNemar tests on sample-wise correctness are significant for those selected comparisons, but they test a different metric-level question.
 
 ## Minimal Dependency Information
 
@@ -140,7 +160,6 @@ This project prioritizes `test_bal_acc` because the background class `n` is much
 | Scikit-learn | 1.3.2 |
 | Matplotlib | 3.7.2 |
 | Transformers | 4.46.3 |
-
 
 ## Citation
 
@@ -166,4 +185,4 @@ The dataset is not covered by the repository's MIT License. Dataset access, use,
 
 Zhanjun He
 
-MSc in Artificial Intelligence National College of Ireland
+MSc in Artificial Intelligence, National College of Ireland

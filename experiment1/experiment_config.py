@@ -112,7 +112,7 @@ MODEL_TRAINING_SETTINGS = {
         "motion_input": USE_TRANSFORMER_MOTION_INPUT,
     },
     "trans_cnn_1d": {
-        "batch_size": 32, "full_epochs": 40, "learning_rate": 1e-4, "weight_decay": 1e-4,
+        "batch_size": 16, "full_epochs": 40, "learning_rate": 1e-4, "weight_decay": 1e-4,
         "label_smoothing": 0.03, "clip_grad_norm": 0.25, "warmup_epoch_cap": 5,
         "use_cosine": True, "augmentation": False, "motion_input": USE_TRANSFORMER_MOTION_INPUT,
         "cpu_grad_clip": True, "skip_nonfinite_grad_steps": True,
@@ -128,7 +128,7 @@ MODEL_TRAINING_SETTINGS = {
     "lpvt_full": {
         "batch_size": 6, "full_epochs": 30, "learning_rate": 2e-4, "weight_decay": 5e-2,
         "label_smoothing": 0.05, "clip_grad_norm": 1.0, "warmup_epoch_cap": 6,
-        "use_cosine": True, "augmentation": USE_TRANSFORMER_AUGMENTATION,
+        "use_cosine": True, "augmentation": False,
         "motion_input": USE_TRANSFORMER_MOTION_INPUT,
     },
     "mobilevit_lite": {
@@ -144,7 +144,7 @@ MODEL_TRAINING_SETTINGS = {
         "motion_input": USE_TRANSFORMER_MOTION_INPUT,
     },
     "paper_mobilevit_teacher": {
-        "batch_size": 24, "full_epochs": 40, "learning_rate": 3e-4, "weight_decay": 3e-2,
+        "batch_size": 16, "full_epochs": 40, "learning_rate": 3e-4, "weight_decay": 3e-2,
         "label_smoothing": 0.03, "clip_grad_norm": 1.0, "warmup_epoch_cap": 5,
         "use_cosine": True, "augmentation": USE_TRANSFORMER_AUGMENTATION,
         "motion_input": USE_TRANSFORMER_MOTION_INPUT,
@@ -172,7 +172,7 @@ MODEL_TRAINING_SETTINGS = {
         "motion_input": USE_TRANSFORMER_MOTION_INPUT,
     },
     "timesformer_full": {
-        "batch_size": 2, "full_epochs": 30, "learning_rate": 1.5e-4, "weight_decay": 5e-2,
+        "batch_size": 2, "full_epochs": 30, "learning_rate": 1e-4, "weight_decay": 5e-2,
         "label_smoothing": 0.05, "clip_grad_norm": 1.0, "warmup_epoch_cap": 6,
         "use_cosine": True, "augmentation": USE_TRANSFORMER_AUGMENTATION,
         "motion_input": USE_TRANSFORMER_MOTION_INPUT,

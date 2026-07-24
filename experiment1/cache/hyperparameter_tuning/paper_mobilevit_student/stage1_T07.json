@@ -1,0 +1,39 @@
+{
+  "augmentation": true,
+  "batch_size": 32,
+  "best_epoch": 1,
+  "best_val_balanced_acc": 0.14285714285714285,
+  "best_val_macro_f1": 0.1038961038961039,
+  "clip_grad_norm": 0.5,
+  "epochs": 2,
+  "failure_reason": "",
+  "final_train_val_gap": -0.0037907268170425945,
+  "history": [
+    {
+      "epoch": 1,
+      "train_balanced_acc": 0.13259211859435824,
+      "val_balanced_acc": 0.14285714285714285,
+      "val_macro_f1": 0.1038961038961039
+    },
+    {
+      "epoch": 2,
+      "train_balanced_acc": 0.13906641604010025,
+      "val_balanced_acc": 0.14285714285714285,
+      "val_macro_f1": 0.1038961038961039
+    }
+  ],
+  "label_smoothing": 0.0,
+  "learning_rate": 0.0003,
+  "model": "paper_mobilevit_student",
+  "purpose": "clip_grad_norm",
+  "runtime_seconds": 11.43,
+  "signature": "fd33cff05be21599",
+  "stage": 1,
+  "status": "completed",
+  "teacher_checkpoint": "/Users/blue/Desktop/Practicum/code/experiment1/cache/full/paper_mobilevit_teacher/c15bd06bb9968d3a/best_state.pt",
+  "train_samples": 665,
+  "trial_id": "T07",
+  "val_samples": 490,
+  "warmup_epochs": 1,
+  "weight_decay": 0.02
+}
